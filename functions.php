@@ -46,8 +46,6 @@ function previous_posts_link_attributes() {
 
 
 add_filter( 'nav_menu_item_args', 'ajoutIconesMenu', 10, 3 );
-
-
 function ajoutIconesMenu($args, $item, $depth) {
 
     if ($args->theme_location === 'social') {
@@ -56,7 +54,6 @@ function ajoutIconesMenu($args, $item, $depth) {
         $item->title = '';
     }
     return $args;
-
 }
 
 

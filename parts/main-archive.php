@@ -11,7 +11,7 @@
                 <header class="entry-header">
                     <h2 class="entry-title">
                         <?php if(is_archive() || is_home()){
-                            echo '<a title="<?php the_title();?>" href="<?php the_permalink(); ?>" rel="bookmark">';
+                            ?> <a title="<?php the_title();?>" href="<?php the_permalink(); ?>" rel="bookmark"> <?php
                         } ?>
                         <?php the_title();?>
                         <?php if(is_archive() || is_home()){
